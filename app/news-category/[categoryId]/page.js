@@ -68,7 +68,7 @@ export default function page({ params }) {
                             {
                                 newsData?.data.map((news) => (
                                     <Fragment key={news.id}>
-                                        <NewsItem id={news.id} title={news.title} date={news.date} categories={news.categories} cover={news.image} desc={news.desc} />
+                                        <NewsItem id={news.slug} title={news.title} date={news.date} categories={news.categories} cover={news.image} desc={news.desc} />
                                     </Fragment>
                                 ))
                             }

@@ -19,7 +19,7 @@ export default function VersionsListing() {
     const [agesData, setAgessData] = useState([]);
     const [versionsData, setVersionsData] = useState([]);
     const [localStorage, setLocalStorage] = useState({});
-    const searchParams = useSearchParams();
+    // const searchParams = useSearchParams();
 
     useEffect(() => {
         setLocalStorage(window.localStorage);
@@ -59,9 +59,11 @@ export default function VersionsListing() {
     }, [state.LANG])
     
     useEffect(() => {
-        const version = searchParams.get('version');
-        const ageFromParam = searchParams.get('age_from');
-        const ageToParam = searchParams.get('age_to');
+        const urlParams = new URLSearchParams(window.location.search);
+
+        const version = urlParams.get('version');
+        const ageFromParam = urlParams.get('age_from');
+        const ageToParam = urlParams.get('age_to');
         
         if(versionsData.length > 0) {
             if (version || ageFromParam || ageToParam) {

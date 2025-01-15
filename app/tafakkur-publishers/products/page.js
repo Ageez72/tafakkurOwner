@@ -50,6 +50,15 @@ export default function VersionsListing() {
                 setAgessData(results[1].data);
                 setVersionsData(results[2].data);
                 setLoading(false)
+                const urlParams = new URLSearchParams(window.location.search);
+
+                const version = urlParams.get('version');
+                const ageFromParam = urlParams.get('age_from');
+                const ageToParam = urlParams.get('age_to');
+                
+                if (version || ageFromParam || ageToParam) {
+                    handleFilters(ageFromParam, ageToParam, version);
+                }  
             })
             .catch(error => {
                 setLoading(false)
@@ -58,19 +67,19 @@ export default function VersionsListing() {
 
     }, [state.LANG])
     
-    useEffect(() => {
-        const urlParams = new URLSearchParams(window.location.search);
+    // useEffect(() => {
+    //     const urlParams = new URLSearchParams(window.location.search);
 
-        const version = urlParams.get('version');
-        const ageFromParam = urlParams.get('age_from');
-        const ageToParam = urlParams.get('age_to');
+    //     const version = urlParams.get('version');
+    //     const ageFromParam = urlParams.get('age_from');
+    //     const ageToParam = urlParams.get('age_to');
         
-        if(versionsData.length > 0) {
-            if (version || ageFromParam || ageToParam) {
-                handleFilters(ageFromParam, ageToParam, version);
-            }  
-        }
-    },[versionsData])
+    //     if(versionsData.length > 0) {
+    //         if (version || ageFromParam || ageToParam) {
+    //             handleFilters(ageFromParam, ageToParam, version);
+    //         }  
+    //     }
+    // },[versionsData])
 
     const handleFilters = (age_from, age_to, version) => {
         setLoading(true)

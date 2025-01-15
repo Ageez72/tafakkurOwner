@@ -50,23 +50,22 @@ export default function Version() {
                 setAgesData(results[1].data);
                 setLoading(false)
                 document.title = `تفكر ناشرون | ${results[0].data.category.name}`
+                
+                // const searchParams = new URLSearchParams(window.location.search);
+                const ageFromParam = searchParams.get('age_from') || 1;
+                const ageToParam = searchParams.get('age_to') || "";
+                
+                if (versionDetails?.category?.id && ageFromParam && ageToParam) {
+                    handleFilters(ageFromParam, ageToParam);
+                }
             })
             .catch(error => {
                 setLoading(false)
                 console.error('Error:', error)
             });
 
-    }, [state.LANG])
+    }, [state.LANG, versionDetails?.category?.id])
 
-    useEffect(() => {
-        const ageFromParam = searchParams.get('age_from');
-        const ageToParam = searchParams.get('age_to');
-        
-        if (versionDetails?.category?.id) {
-            handleFilters(ageFromParam, ageToParam);
-            console.log("in 1 field");
-        }  
-    },[versionDetails?.category?.id])
 
     const handleFilters = (age_from, age_to) => {
         setLoading(true)

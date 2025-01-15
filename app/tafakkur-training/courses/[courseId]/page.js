@@ -305,7 +305,7 @@ export default function course({ params }) {
                                                 )}
                                             </div>
                                             <div className="card-info mb-5" dangerouslySetInnerHTML={{ __html: courseData?.course.live_benefits }} />
-                                            <a className="wow fadeInUp hover-btn" data-wow-delay=".4s" href={`${courseData?.course.recorded_url}${urlParams}`}>ابدأ الآن</a>
+                                            <a className="wow fadeInUp hover-btn" data-wow-delay=".4s" href={`${courseData?.course.recorded_url}`}>ابدأ الآن</a>
                                         </div>
                                     </div>
                                     {
@@ -330,7 +330,7 @@ export default function course({ params }) {
                                                     </div>
                                                     <h5 className="mb-3">* خصم {courseData?.course?.discount && <span className="en-txt">{courseData?.course?.discount}%</span>} إضافي عند الدفع مبكراً</h5>
                                                     <div className="card-info mb-5" dangerouslySetInnerHTML={{ __html: courseData?.course.zoom_benefits }} />
-                                                    <a className="wow fadeInUp hover-btn" data-wow-delay=".4s" href={`${courseData?.course.live_url}${urlParams}`}>احجز مقعدك</a>
+                                                    <a className="wow fadeInUp hover-btn" data-wow-delay=".4s" href={`${courseData?.course.live_url}`}>احجز مقعدك</a>
                                                 </div>
                                             </div>
                                         )

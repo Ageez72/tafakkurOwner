@@ -31,7 +31,7 @@ export default function AnosManager() {
                             <Image width={100} height={99} className="ms-3" src="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/الجوائز-مها-شحاده.png" alt="جائزة مها شحادة" />
                         </div>
                         <p className='white-txt mb-4'>
-                            <a href={`https://mahashehadeh.com${urlParams}`} target='_blank' className='d-inline-flex align-items-center white-txt'>
+                            <a href={`https://mahashehadeh.com`} target='_blank' className='d-inline-flex align-items-center white-txt'>
                                 الموقع الرسمي للأستاذة مها شحاده
                                 <i className="fa-solid fa-arrow-left ms-2"></i>
                             </a>

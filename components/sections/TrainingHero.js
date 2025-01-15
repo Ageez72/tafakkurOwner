@@ -10,13 +10,13 @@ import { useState, useEffect } from 'react'
 export default function TrainingHero({ link, cover }) {
   const { state } = useAppContext();
   const translation = state.LANG === "en" ? en : ar;
-  const [urlParams, setUrlParams] = useState("");
+  const [localStorage, setLocalStorage] = useState({});
 
   useEffect(() => {
-
-    const storedParams = getUrlParams();
-    setUrlParams(storedParams || "");
+      setLocalStorage(window.sessionStorage);
+      console.log(window.sessionStorage.utm_source);
   }, []);
+
   return (
     <>
       <section className="hero-section fix hero-1 bg-cover training">
@@ -30,7 +30,7 @@ export default function TrainingHero({ link, cover }) {
                   <br />
                   التي تجمع بين أصالة الإسلام وحداثة علم الدماغ والأعصاب
                 </h2>
-                <a href={`${link}${urlParams}`} target="_blank" className="wow fadeInUp hero-button" data-wow-delay=".4s">
+                <a href={`${link}`} target="_blank" className="wow fadeInUp hero-button" data-wow-delay=".4s">
                   احجز مقعدك في أقرب برنامج تدريبي
                 </a>
               </div>

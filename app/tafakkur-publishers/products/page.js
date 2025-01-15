@@ -19,11 +19,10 @@ export default function VersionsListing() {
     const [agesData, setAgessData] = useState([]);
     const [versionsData, setVersionsData] = useState([]);
     const [localStorage, setLocalStorage] = useState({});
-    // const searchParams = useSearchParams();
 
     useEffect(() => {
         setLocalStorage(window.sessionStorage);
-        console.log(window.sessionStorage);
+        console.log(window.sessionStorage.utm_source);
     }, []);
     
     const myHeaders = new Headers();

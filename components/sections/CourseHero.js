@@ -36,7 +36,7 @@ export default function CourseHero({ data }) {
                                         <p className="mb-3 wow fadeInUp" data-wow-delay=".4s">
                                             {data?.hint}
                                         </p>
-                                        {data?.main_url && <Link href={`${data?.main_url}${urlParams}`} className="wow fadeInUp hero-button me-3" data-wow-delay=".4s">
+                                        {data?.main_url && <Link href={`${data?.main_url}`} className="wow fadeInUp hero-button me-3" data-wow-delay=".4s">
                                             انضم الآن
                                         </Link>}
                                         <div className="row justify-content-center mt-5 course-info">

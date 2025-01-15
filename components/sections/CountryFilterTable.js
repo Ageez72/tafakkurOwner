@@ -77,7 +77,7 @@ export default function CountryFilterTable({ title, data, countries, handleSubmi
                                         <td>{school?.region}</td>
                                         {
                                             i === 0 ? (<td>
-                                                <a href={`#${urlParams}`} className='near-place'>الأقرب إليك!</a>
+                                                <a href={`#`} className='near-place'>الأقرب إليك!</a>
                                                 </td>) : 
                                                 (<td></td>)
                                         }

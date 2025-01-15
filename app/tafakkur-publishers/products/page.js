@@ -19,6 +19,7 @@ export default function VersionsListing() {
     const [agesData, setAgessData] = useState([]);
     const [versionsData, setVersionsData] = useState([]);
     const [localStorage, setLocalStorage] = useState({});
+    const searchParams = useSearchParams();
 
     useEffect(() => {
         setLocalStorage(window.localStorage);
@@ -58,7 +59,6 @@ export default function VersionsListing() {
     }, [state.LANG])
     
     useEffect(() => {
-        const searchParams = useSearchParams();
         const version = searchParams.get('version');
         const ageFromParam = searchParams.get('age_from');
         const ageToParam = searchParams.get('age_to');

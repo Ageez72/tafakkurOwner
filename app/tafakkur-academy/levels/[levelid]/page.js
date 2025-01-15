@@ -36,8 +36,7 @@ export default function page({ params }) {
     const [localStorage, setLocalStorage] = useState({});
 
     useEffect(() => {
-        setLocalStorage(window.localStorage);
-        console.log(window.localStorage);
+        setLocalStorage(window.sessionStorage);
     }, []);
     
     useEffect(() => {

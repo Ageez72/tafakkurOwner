@@ -8,8 +8,8 @@ export default function UpcomingEvents({ data }) {
     const [localStorage, setLocalStorage] = useState({});
 
     useEffect(() => {
-        setLocalStorage(window.localStorage);
-        console.log(window.localStorage);
+        setLocalStorage(window.sessionStorage);
+        console.log(window.sessionStorage);
     }, []);
 
     return (

@@ -15,8 +15,8 @@ export default function AcademyHero({data}) {
     const [localStorage, setLocalStorage] = useState({});
 
     useEffect(() => {
-        setLocalStorage(window.localStorage);
-        console.log(window.localStorage);
+        setLocalStorage(window.sessionStorage);
+        console.log(window.sessionStorage);
     }, []);
 
     // Replace with your phone number (including country code, but without + or 00)

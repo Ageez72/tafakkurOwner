@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
 
   // Function to get URL parameters
   function getQueryParams() {
-    if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
+    if (typeof window !== 'undefined' && typeof window.sessionStorage !== 'undefined') {
       const urlParams = new URLSearchParams(window?.location.search);
       return urlParams;
     }
@@ -79,12 +79,12 @@ export default function RootLayout({ children }) {
   const utmSource = params?.get('utm_source');
 
   if (utmSource) {
-    if(typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
-      localStorage?.setItem('utm_source', utmSource);
+    if(typeof window !== 'undefined' && typeof window.sessionStorage !== 'undefined') {
+      sessionStorage?.setItem('utm_source', utmSource);
     }
   } else {
-    if(typeof window !== 'undefined' && typeof window.localStorage !== 'undefined'){
-      localStorage?.removeItem('utm_source');
+    if(typeof window !== 'undefined' && typeof window.sessionStorage !== 'undefined'){
+      sessionStorage?.removeItem('utm_source');
     }
   }
 

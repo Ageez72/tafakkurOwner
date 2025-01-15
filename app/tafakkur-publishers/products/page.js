@@ -22,8 +22,8 @@ export default function VersionsListing() {
     // const searchParams = useSearchParams();
 
     useEffect(() => {
-        setLocalStorage(window.localStorage);
-        console.log(window.localStorage);
+        setLocalStorage(window.sessionStorage);
+        console.log(window.sessionStorage);
     }, []);
     
     const myHeaders = new Headers();

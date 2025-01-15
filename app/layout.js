@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
     }
   } else {
     if(typeof window !== 'undefined' && typeof window.localStorage !== 'undefined'){
-      // localStorage?.removeItem('utm_source');
+      localStorage?.removeItem('utm_source');
     }
   }
 

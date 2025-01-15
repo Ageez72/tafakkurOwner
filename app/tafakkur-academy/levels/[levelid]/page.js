@@ -152,7 +152,7 @@ export default function page({ params }) {
                                             </li>
                                         </ul>
                                     </div>
-                                    <a className="wow fadeInUp hover-btn" data-wow-delay=".4s" href={`https://zfrmz.com/o9ZSobK0CpnlzJ1K2yTR?utm_source=${localStorage?.getItem("utm_source") || ''}`}>احجز مقعد طفلك</a>
+                                    <a className="wow fadeInUp hover-btn" data-wow-delay=".4s" href={`https://zfrmz.com/o9ZSobK0CpnlzJ1K2yTR?utm_source=${localStorage?.utm_source}`}>احجز مقعد طفلك</a>
                                 </div>
                             </div>
                         </div>

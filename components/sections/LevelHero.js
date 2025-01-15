@@ -10,12 +10,11 @@ import { useState, useEffect } from 'react'
 export default function LevelHero({ data }) {
     const { state } = useAppContext();
     const translation = state.LANG === "en" ? en : ar;
-    const [urlParams, setUrlParams] = useState("");
-    
+    const [localStorage, setLocalStorage] = useState({});
+
     useEffect(() => {
-        
-        const storedParams = getUrlParams();
-        setUrlParams(storedParams || "");
+        setLocalStorage(window.localStorage);
+        console.log(window.localStorage);
     }, []);
 
     // Replace with your phone number (including country code, but without + or 00)
@@ -36,7 +35,7 @@ export default function LevelHero({ data }) {
                                 <div className="level-content wow fadeInUp" data-wow-delay=".4s">
                                     <h3 className="white-txt mb-4">لعمر <span className="en-txt">{data?.age}</span> سنوات</h3>
                                 </div>
-                                <a href={`https://zfrmz.com/o9ZSobK0CpnlzJ1K2yTR?utm_source=${localStorage?.getItem("utm_source") || ''}`} target="_blank" rel="noopener noreferrer" className="wow fadeInUp hero-button hero-hover-btn orange-btn" data-wow-delay=".4s">
+                                <a href={`https://zfrmz.com/o9ZSobK0CpnlzJ1K2yTR?utm_source=${localStorage?.utm_source}`} target="_blank" rel="noopener noreferrer" className="wow fadeInUp hero-button hero-hover-btn orange-btn" data-wow-delay=".4s">
                                     احجز مقعد ابنك في <span>{data?.next_date && formatDate(data?.next_date)}</span>
                                 </a>
                             </div>

@@ -1,0 +1,62 @@
+.said-about-us {}
+
+.effects-results {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (min-width:1200px) {
+        min-height: 438px;
+    }
+
+    &.level-video {
+        min-height: auto;
+
+        .overlay {
+            opacity: 0.631;
+            background-color: #252068;
+        }
+
+        p {
+            font-size: pxtorem(24);
+        }
+
+        .video-btn {
+            height: 60px;
+            width: 60px;
+            line-height: 65px;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        background: #251f67cc;
+        inset: 0;
+        z-index: 2;
+    }
+
+    .bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .content {
+        z-index: 3;
+
+        h2 {
+            color: $white;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: $white;
+            margin-bottom: 25px;
+        }
+    }
+}

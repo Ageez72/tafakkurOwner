@@ -1,0 +1,154 @@
+.about-section {
+    padding-bottom: 200px;
+
+    .sm-image {
+        width: 200px;
+        height: 235px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .vision-wrapper {
+        margin: 50px 0;
+
+        .vision-card {
+            padding: 30px 50px;
+            border-radius: 10px;
+            background-color: #f6f5fd;
+            border: 1px solid #f2f5f5;
+            height: 100%;
+
+            h3 {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .swiper-slide {
+        height: 220px;
+
+        @media (max-width: 600px) {
+            height: 300px;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        color: #000;
+        font-weight: 600;
+        border-radius: 100px;
+        background-color: #fff;
+        filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.1));
+
+        &:after {
+            font-size: 16px;
+        }
+    }
+
+    .about-accordion {
+        margin-top: 80px;
+
+        .accordion-item {
+            border: none;
+
+            &.research {
+                background-color: #83266c;
+                .accordion-body {
+                    border-color: #651e53;
+                }
+            }
+
+            &.training {
+                background-color: #262169;
+                .accordion-body {
+                    border-color: #302b7d;
+                }
+            }
+
+            &.certified {
+                background-color: #3583a4;
+            }
+
+            &.publish {
+                background-color: #5dbcbd;
+            }
+
+            .accordion-button {
+                padding: 2.5rem 1.25rem;
+                color: #fff;
+                background-color: inherit;
+                box-shadow: none;
+                font-size: inherit;
+                display: flex;
+                align-items: center;
+
+                &:after {
+                    width: auto;
+                    height: auto;
+                    margin-left: auto;
+                    margin-right: 11px;
+                    content: "\f078";
+                    font-family: FontAwesome;
+                    background-image: none;
+                    font-size: 15px;
+                }
+
+                &:not(.collapsed)::after {
+                    background-image: none;
+                }
+            }
+
+            .accordion-body {
+                border-top: 2px solid #3E9394;
+                padding: 30px 0;
+                p {
+                    color: #fff;
+                    font-family: "GE Flow";
+                    font-weight: 400;
+                    font-size: pxtorem(20);
+                    margin-bottom: 8px;
+                }
+            }
+
+            &:first-of-type .accordion-button {
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+.president {
+    .president-title {
+        em {
+            font-size: pxtorem(24);
+        }
+    }
+
+    .president-image {
+        margin-bottom: 0;
+
+        @media (max-width:992px) {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 250px;
+        }
+    }
+}

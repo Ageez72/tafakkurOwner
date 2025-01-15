@@ -1,0 +1,217 @@
+.hero-section {
+  position: relative;
+  z-index: 8;
+  padding-top: 170px;
+  padding-bottom: 60px;
+  margin-top: -75px;
+
+  @media (min-width: 992px) {
+    margin-top: -88px;
+  }
+
+}
+
+.wave-wrapper {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  z-index: 1;
+  color: #fff;
+  width: 100%;
+
+  @media (min-width: 600px) {
+    bottom: 0;
+  }
+}
+
+.scale-\[2\.0\] {
+  --tw-scale-x: 2.0 !important;
+  --tw-scale-y: 2.0 !important;
+  transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(2) scaleY(2) !important;
+  -webkit-transform-origin: top !important;
+  transform-origin: top !important;
+}
+
+.hero-1 {
+
+  &.training {
+    background-image: url("https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/training/hero-bg.jpg");
+  }
+
+  &.level {
+    background-image: url("https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/level/trainee.jpg");
+    background-position: 50% 90%;
+
+    .hero-content {
+      .orange-btn {
+        background-color: #ff9016;
+
+        &:hover {
+          background-color: #ff8e16be !important;
+        }
+      }
+    }
+  }
+
+  &.academy {
+    min-height: 550px;
+    background-image: url("https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/tafakkurAcademy/hero.jpg");
+    background-position: 0 24%;
+
+    .overlay {
+      opacity: 0.749;
+      background-color: #221c4e;
+    }
+  }
+
+  &.publishers {
+    padding-bottom: 135px;
+    background-image: url("https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/versions/hero-bg.jpg");
+
+    .hero-content {
+      h2 {
+        margin-bottom: 0;
+      }
+
+      .view-info {
+        font-size: pxtorem(21);
+        line-height: 51px;
+        color: #ffffff;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .hero-button {
+        width: auto;
+        padding: 0 20px;
+      }
+    }
+
+    .hero-image {
+      width: 300px;
+
+      img {
+        position: relative;
+        width: 100%;
+      }
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #00A78F;
+        position: absolute;
+        top: 30px;
+        left: -30px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  &.academy-hero {
+    .hero-image {
+      width: 300px;
+    }
+  }
+
+  .hero-content {
+    position: relative;
+
+    @include breakpoint(max-xl) {
+      margin-bottom: 80px;
+    }
+
+    @include breakpoint(max-lg) {
+      margin-bottom: 0;
+    }
+
+    @include breakpoint(max-sm) {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: pxtorem(44);
+      line-height: 51px;
+      color: #ffffff;
+      margin-bottom: 20px;
+
+      // @include breakpoint(max-xxl) {
+      //   font-size: 50px;
+      // }
+
+      // @include breakpoint(max-lg) {
+      //   font-size: 44px;
+      // }
+
+      // @include breakpoint(max-md) {
+      //   font-size: 48px;
+      // }
+
+      // @include breakpoint(max-sm) {
+      //   font-size: 32px;
+      //   margin-bottom: 20px;
+      // }
+    }
+
+    .hero-button {
+      width: 310px;
+      height: 47px;
+      border-radius: 7px;
+      background-color: var(--themePurple);
+      font-size: pxtorem(22);
+      color: #ffffff;
+      text-align: center;
+      display: inline-block;
+      line-height: 47px;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        color: var(--themePurple);
+        background-color: #fff;
+      }
+
+      &.hero-hover-btn-outline {
+        &:hover {
+          border-color:var(--themePurple) ;
+          background-color: var(--themePurple) !important;
+          color: #fff;
+        }
+      }
+    }
+
+
+    .hero-content-bg {
+      position: absolute;
+      top: -45px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  .hero-image {
+    width: 520px;
+    position: relative;
+
+    // z-index: 111;
+    @include breakpoint(max-xxxl) {
+      width: initial;
+      height: initial;
+      max-width: 520px;
+
+      img {
+        @include imgw;
+      }
+    }
+
+    @include breakpoint(max-xl) {
+      margin-bottom: -95px;
+    }
+
+    @include breakpoint(max-lg) {
+      text-align: center;
+      margin: 40px auto 0;
+    }
+  }
+}

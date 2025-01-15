@@ -1,0 +1,455 @@
+.supervisory-committee {
+    background-color: #f9fafb;
+
+    .person-img {
+        width: 177px;
+        height: 177px;
+        border-radius: 100px;
+        margin: auto;
+        img {
+            width: 100%;
+        }
+    }
+
+    .person-name {
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        a {
+            color: #1652ab;
+        }
+    }
+    @media (min-width: 992px) {
+        .equal-width-div {
+          flex: 1 !important;
+        //   width: auto !important;
+        }
+      }
+}
+
+
+.anos-contact-experience {
+    .anos-contact {
+        background-color: var(--themePurple);
+    }
+
+    .anos-experience {
+        h3 {
+            color: #8797ae;
+        }
+
+        a {
+            color: var(--themePurple);
+        }
+    }
+
+    .anos-experience-slider {
+        position: relative;
+        @media (max-width: 500px) {
+            overflow: hidden;
+        }
+        .overlay {
+            width: 320px;
+            height: 275px;
+            background-color: #f6f6fe;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-40px, 10px) rotate(34deg);
+            border-radius: 10px;
+        }
+
+        .exp-img {
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .swiper-wrapper {
+            border-radius: 10px;
+        }
+
+        .swiper-pagination {
+            bottom: 0;
+
+            .swiper-pagination-bullet {
+                background-color: #C9C7F9;
+
+                &.swiper-pagination-bullet-active {
+                    transform: rotate(45deg);
+                    background-color: #5046E4;
+                }
+            }
+        }
+    }
+}
+
+.anos-courses {
+    .card-img-top {
+        height: 228px;
+        object-fit: cover;
+    }
+
+    a {
+        color: var(--themePurple);
+    }
+}
+
+.anos-review-video {
+    background-image: url(https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/anos/review.jpg);
+
+    .overlay {
+        opacity: 0.749;
+        background-color: #252068;
+    }
+}
+
+.apply-menhag {
+    background-color: #F9FAFB;
+
+    .col-side {
+        width: 232px;
+        height: 193px;
+        border-radius: 10px;
+        filter: drop-shadow(1.753px 3.595px 2px rgba(0, 0, 0, 0.02));
+        background-color: #ffffff;
+        border: 1px solid #f6f6fd;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .side-icon {
+            width: 64px;
+            height: 59px;
+            line-height: 59px;
+            text-align: center;
+            border-radius: 8px;
+            filter: drop-shadow(1.753px 3.595px 2px rgba(0, 0, 0, 0.02));
+            background-color: #f6f6fe;
+            border: 1px solid #f1f1f1;
+            display: inline-block;
+            margin-bottom: 15px;
+
+            i {
+                font-size: 24px;
+                color: var(--themeBlueDark);
+            }
+        }
+    }
+}
+
+.anos-levels-effects {
+    .bg-color {
+        padding: 50px 0;
+        background-color: #F9FAFB;
+    }
+
+    .col-wrapper {
+        // max-width: 380px;
+    }
+
+    .level-side {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 100%;
+        height: 200px;
+
+        &:hover {
+            .card-hover-cover {
+                background: #83296b;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .card-hover-cover {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: all .4s ease;
+            opacity: 0;
+        }
+
+        .card-avatar {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                // height: 202px;
+            }
+        }
+    }
+
+    .anos-effects {
+        padding: 50px 0;
+        .img-side {
+            height: 300px;
+            @media (max-width:992px) {
+                margin-bottom: 30px;
+            }
+        }
+        .video-wrapper {
+            height: 300px;
+
+            .video-btn {
+                z-index: 9;
+            }
+        }
+    }
+}
+
+.anos-courses {
+    .course-container {
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            & {
+                transform: scale(1.05);
+            }
+
+            .overlay {
+                opacity: 1;
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.4705882353);
+            opacity: 0;
+            transition: all 0.4s ease-in-out
+        }
+    }
+}
+
+.anos-dark-bg {
+    padding: 80px 0 100px;
+    background-color: #262169;
+
+    @media (max-width: 600px) {
+        padding: 80px 0.5rem 100px;
+    }
+}
+
+.supervisory-details {
+    display: block;
+    text-align: center;
+    padding: 0 35px;
+    line-height: 1.6;
+}
+
+.anos-why-apply-menhag {
+    .image-full {
+        background-color: #fff;
+    }
+
+    .shape {
+        &.right {
+            right: auto;
+        }
+    }
+}
+
+.anos-hero-slider-wrapper {
+    padding-bottom: 30px;
+    transform: scale(0.95);
+    padding: 40px 0 20px;
+
+    .swiper-wrapper {
+        padding-bottom: 30px;
+    }
+
+    .title-image {
+        // height: 45px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: pxtorem(50);
+    }
+
+    .left-side {
+        @media (max-width:560px) {
+            // display: none;
+        }
+    }
+
+    .txt-side {
+        position: relative;
+        opacity: 0;
+
+        .overlay {
+            content: "";
+            position: absolute;
+            top: -10px;
+            right: 0;
+            left: auto;
+            opacity: 0.180;
+            width: 193px;
+            height: 60px;
+            border-radius: 10px;
+            background-color: #262169;
+            border: 1px solid #cccccc;
+            // z-index: -2;
+
+            @media (max-width:992px) {
+                right: 20px;
+            }
+        }
+
+        h5 {
+            width: 270px;
+            // padding: 20px 8px;
+            text-align: center;
+            border-radius: 10px;
+            font-weight: 900;
+            // filter: drop-shadow(-0.776px 2.898px 5px rgba(0, 0, 0, 0.09));
+            // background-color: #ffffff;
+            position: relative;
+            z-index: 2;
+            margin: auto;
+            // opacity: 0;
+
+            @media (max-width:992px) {
+                width: 220px;
+                // margin-right: 20px;
+            }
+        }
+        &.txt-side-bottom {
+            h5 {
+                transform: translateX(100px);
+                @media (max-width: 480px) {
+                    transform: translateX(50px);
+                }
+                @media (max-width: 380px) {
+                    transform: translateX(80px);
+                }
+            }
+        }
+    }
+
+    .swiper-slide {
+        opacity: 0 !important;
+        /* Make all slides hidden initially */
+        transition: opacity 1.3s ease-in-out !important;
+        pointer-events: none !important;
+        /* Prevent interaction with hidden slides */
+    }
+
+    .swiper-slide-active {
+        opacity: 1 !important;
+        /* Show only the active slide */
+        pointer-events: auto !important;
+        /* Enable interaction with the active slide */
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInbottom {
+        from {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .hero-animate {
+        animation: slideIn 0.5s ease-in-out 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+    .hero-animate-bottom {
+        animation: slideInbottom 0.5s ease-in-out 0.3s;
+        animation-fill-mode: forwards;
+    }
+
+    .bottom-side {
+        .overlay {
+            right: auto;
+            left: 50%;
+            transform: translateX(-43%);
+            background-color: #95e48d;
+
+            @media (max-width:992px) {
+                transform: translateX(-26%);
+            }
+
+            @media (max-width:767px) {
+                transform: translateX(-40%);
+            }
+        }
+    }
+}
+
+.levels-available {
+    @media (max-width: 600px) {
+        .titles {
+            text-align: center;
+
+            h2 {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.about-tafakuur-image {
+    @media (max-width: 600px) {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-tafakuur-content {
+        padding: 0 0.5rem !important;
+
+        .action-buttons {
+            justify-content: center;
+        }
+    }
+}
+
+.tafakuur-institutions {
+    &.top {
+        .swiper.brand-slider {
+            width: 90%;
+            border-bottom: 1px solid #f3f3f5;
+            margin-bottom: 50px;
+        }
+
+        .swiper-wrapper {
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    h3 {
+        .tafakuurInstitutions-link {
+            color: var(--themePurple);
+        }
+    }
+}

@@ -1,0 +1,262 @@
+.course-hero {
+    padding-top: 215px;
+    padding-bottom: 100px;
+    background-position: 50% 36%;
+    background-image: url("https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/hero/course-bg.jpg");
+
+    .overlay {
+        opacity: 0.600;
+        background-color: #1b2131;
+    }
+
+
+    .hero-content {
+
+        h2 {
+            font-size: pxtorem(55);
+            margin: 10px 0;
+        }
+
+        h3 {
+            color: $white;
+            font-size: pxtorem(27);
+        }
+
+        h4 {
+            color: $white;
+            font-size: pxtorem(22);
+        }
+
+
+        p {
+            color: $white;
+            font-size: pxtorem(24);
+        }
+
+        .course-info {
+            color: $white;
+
+            i {}
+
+            span {}
+        }
+    }
+}
+
+.course-wrapper {
+    .sticky-tabs {
+        position: sticky;
+        top: 88px;
+        z-index: 99;
+        background-color: #fff;
+        padding: 10px 0;
+        @media (max-width: 992px) {
+            top: 71px;
+        }
+    }
+
+    .course-content-tabs {
+        &.sticky {
+            position: fixed;
+            top: 88px;
+            left: 10px;
+            background-color: #f1f1f1;
+            width: 100%;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        p {
+            padding: 0;
+            @media (max-width: 510px) {
+                padding: 5px 0;
+            }
+
+            a {
+                padding: 5px 8px;
+                border-bottom: 2px solid #F6F6FD;
+                color: #94a3b8;
+
+                &.active {
+                    color: #000;
+                    border-color: var(--themePurple);
+                }
+            }
+
+
+        }
+    }
+
+    #whatLearn {
+        padding-top: 140px;
+
+        h3 {
+            font-size: pxtorem(28);
+        }
+
+        .learn-items {
+
+            li {
+                color: #000;
+
+                &::before {
+                    background-color: #2D45A0;
+                }
+            }
+
+        }
+    }
+
+    #dateTime {
+        padding: 140px 0 80px;
+        background-color: #2D45A0;
+
+        h2 {
+            color: $white;
+            font-size: pxtorem(32);
+        }
+
+        h4 {
+            color: $white;
+            font-size: pxtorem(28);
+            margin-bottom: 20px;
+        }
+
+        .course-date-info {
+            margin-bottom: 20px;
+
+            h5 {
+                color: $white;
+                margin-bottom: 8px;
+                display: flex;
+                align-items: center;
+                font-size: pxtorem(24);
+
+                i {
+                    font-size: 24px;
+                    margin-left: 20px;
+                }
+            }
+
+            p {
+                color: $white;
+                font-size: pxtorem(19);
+                margin-right: 33px;
+            }
+        }
+    }
+
+    #goals {
+        padding-top: 140px;
+        background-color: #f6f5fd;
+
+        h4 {
+            font-size: pxtorem(28);
+            margin-bottom: 20px;
+        }
+
+        li {
+            font-family: "GE Flow";
+            font-weight: 400;
+            font-size: pxtorem(20);
+            margin-bottom: 10px;
+            padding: 0 24px;
+            position: relative;
+            color: #94a3b8;
+
+            &::before {
+                content: "";
+                width: 11px;
+                height: 11px;
+                border-radius: 100px;
+                background-color: #2D45A0;
+                position: absolute;
+                top: 7px;
+                right: 0;
+            }
+        }
+    }
+
+    #testimonials {
+        padding-top: 140px;
+        h4 {
+            font-size: pxtorem(28);
+            margin-bottom: 20px;
+        }
+
+        .version-testimonial-slider {
+            margin: 0;
+            // padding-top: 60px;
+
+            .swiper-wrapper {
+                padding-bottom: 24px;
+            }
+
+            .testimonial-slider {
+                .content-wrapper {
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+
+                    .testimonial-message {
+                        padding: 40px 0 20px;
+                        margin-bottom: 0;
+                        position: relative;
+                        p {
+                            font-style: italic;
+                        }
+                    }
+
+                    .quote-icon {
+                        i {
+                            color: #F3F3F4;
+                        }
+
+                        &.left-icon,
+                        &.right-icon {
+                            position: absolute;
+                        }
+
+                        &.left-icon {
+                            top: -5px;
+                            left: 0;
+                        }
+
+                        &.right-icon {
+                            display: block;
+                            bottom: -20px;
+                        }
+                    }
+                }
+
+                .person-img {
+                    width: 60px;
+                    height: 60px;
+                    object-fit: cover;
+                    border-radius: 100%;
+                }
+
+                .testimonial-person-name {
+                    font-size: pxtorem(22);
+                }
+
+                .testimonial-person-position {
+                    font-size: pxtorem(18);
+                }
+            }
+        }
+    }
+    #trainee {
+        // padding-top: 140px;
+        .desc {
+            font-family: "GE Flow";
+            font-weight: 400;
+            font-size: 1.1875rem;
+        }
+    }
+    #cost {
+        padding-top: 140px;
+        background-color: #f6f5fd;
+    }
+}

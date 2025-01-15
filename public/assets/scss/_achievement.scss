@@ -1,0 +1,65 @@
+.achievement-section {
+    position: relative;
+
+    &.publishers {
+        margin-top: -2px;
+        background: #fff;
+    }
+
+    .overlay {
+        position: absolute;
+        background: #64004abf;
+        inset: 0;
+    }
+
+
+    .achievement-wrapper {
+        &.training {
+            background-image: url("https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/achievement/map.jpg");
+
+            .counter-area {
+
+                h2,
+                p {
+                    color: #fff;
+                }
+            }
+        }
+
+        &.publishers {
+
+            .counter-area {
+
+                h2 {
+                    color: #00a88f;
+                }
+
+                p {
+                    color: #000;
+                }
+            }
+        }
+
+        .counter-area {
+            position: relative;
+
+            h2 {
+                font-size: pxtorem(36);
+                font-weight: bold;
+                font-family: "Arial";
+            }
+
+            p {
+                font-size: pxtorem(21);
+            }
+
+            .shape {
+                position: absolute;
+                left: 0;
+                bottom: -115px;
+                width: 100px;
+            }
+        }
+
+    }
+}

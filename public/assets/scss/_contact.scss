@@ -1,0 +1,171 @@
+.contact-section {
+    h2 {
+        font-size: pxtorem(37);
+        margin-bottom: 25px;
+        color: var(--themeBlueDark);
+    }
+}
+
+.shape-wrapper {
+    position: relative;
+
+    > img {
+        position: absolute;
+        top: -130px;
+        right: 0;
+        width: 85px;
+    }
+}
+
+#contact-form {
+    padding-bottom: 80px;
+
+    &.sm-padding {
+        padding-bottom: 100px;
+    }
+
+    @media (min-width:1200px) {
+        padding-bottom: 150px;
+    }
+
+    .select-field {
+        .form-clt {
+            i {
+                z-index: 2;
+
+                &+div {
+
+                    .css-t3ipsp-control,
+                    .css-13cymwt-control {
+                        outline: none;
+                        border: 1px solid #ebebeb;
+                        padding-right: 30px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .form-clt {
+        position: relative;
+
+        i {
+            position: absolute;
+            right: 11px;
+            top: 15px;
+            font-size: pxtorem(20);
+            color: #000;
+            // z-index: 2;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px 5px;
+            padding-right: 40px;
+            border-radius: 5px;
+            border: 1px solid #ebebeb;
+            font-family: "GE Flow";
+            font-weight: 400;
+            color: #000;
+            text-align: right;
+            font-size: pxtorem(20);
+
+            &::placeholder {
+                color: #7e7575;
+                font-family: "GE Flow";
+            }
+        }
+
+        [type=email],
+        [type=number],
+        [type=tel],
+        [type=url] {
+            direction: rtl;
+        }
+
+        .message-wrap {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-family: "GE Flow";
+            font-weight: 400;
+            font-size: pxtorem(20);
+            color: #7e7575;
+            span {
+                padding: 0 8px;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            padding-top: 45px;
+            border: 1px solid #ebebeb;
+            outline: none;
+            font-family: "GE Flow";
+            font-weight: 400;
+            border-radius: 4px;
+            font-size: pxtorem(20);
+        }
+
+        .error {
+            color: #de5858;
+            font-family: "GE Flow";
+            font-weight: 400;
+            border-radius: 4px;
+            font-size: pxtorem(20);
+        }
+        .PhoneInput {
+            border-radius: 5px;
+            padding-right: 30px;
+            border: 1px solid #ebebeb;
+            .PhoneInputCountry {
+                .PhoneInputCountrySelectArrow {
+                    opacity: 0;
+                }
+            }
+            input {
+                padding-right: 0;
+                border: none;
+                border-radius: 0;
+                font-family: "Myriad Pro" !important;
+                direction: ltr;
+                text-align: left;
+            }
+        }
+    }
+
+    button {
+        padding: 8px 25px;
+        border-radius: 10px;
+        font-size: pxtorem(19);
+    }
+}
+
+.message-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.message-box {
+    font-family: "GE Flow";
+
+    &.success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+
+    &.error {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+
+}
+
+.map-wrapper {}

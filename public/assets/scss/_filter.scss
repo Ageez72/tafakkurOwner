@@ -1,0 +1,85 @@
+.country-filter {
+    .filter-wrap {
+        min-width: 200px;
+    }
+
+    .filters-fields {
+        @media (max-width: 992px) {
+            width: auto
+        }
+
+        .css-13cymwt-control {
+            color: #252068;
+            background-color: #f4f4f4;
+        }
+    }
+
+    .table-container {
+        overflow-x: auto;
+
+        table {
+            border-radius: 10px;
+            overflow: hidden;
+            min-width: 800px;
+
+            tr,
+            th,
+            td {
+                border: none !important;
+                font-family: "GE Flow";
+                font-size: pxtorem(19);
+
+                .near-place {
+                    color: $white;
+                    padding: 5px 10px;
+                    font-size: pxtorem(16);
+                    font-weight: inherit;
+                    border-radius: 10px;
+                    background-color: #3583a3;
+                    display: none;
+                }
+            }
+
+            thead {
+                background-color: #fbfafa;
+                border: 1px solid #ebebeb;
+
+                tr {
+
+                    th {
+                        color: #29292a;
+                        font-size: pxtorem(20);
+                        font-weight: 600;
+                        padding: 12px 5px;
+
+                        &:first-child {
+                            padding-right: 20px;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                padding: 15px 0;
+                border: 1px solid #ebebeb;
+                border-top: none;
+
+                th {
+                    color: #29292a;
+                    padding: 10px 5px;
+                    padding-right: 20px;
+                }
+
+                td {
+                    color: #7d7f81;
+                    padding: 10px 5px;
+                }
+            }
+        }
+    }
+}
+
+.select-field {
+    font-size: pxtorem(20);
+    font-family: "GE Flow";
+}

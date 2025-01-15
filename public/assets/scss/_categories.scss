@@ -1,0 +1,129 @@
+.categories-section {
+    .categories-wrapper {
+        padding-bottom: 100px;
+
+        .category-icon {
+            background: #F6F5FD;
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            width: 110px;
+            height: 125px;
+            line-height: 137px;
+            margin: auto;
+        }
+
+        .category-title {}
+
+        .category-desc {
+            color: #94a3b8;
+        }
+
+        .category-icon {
+            i {
+                font-size: 35px;
+            }
+        }
+
+        &.training {
+            .category-icon {
+                i {
+                    color: #2D459F;
+                }
+            }
+        }
+
+        &.publishers {
+            padding-bottom: 50px;
+
+            .category-icon {
+                i {
+                    color: #00A78F;
+                }
+            }
+        }
+
+        &.academy {
+            .category-icon {
+                i {
+                    color: #FF8F15;
+                }
+            }
+        }
+
+        &.level {
+            .category-icon {
+                i {
+                    color: #251F67;
+                }
+            }
+
+            .category-title {
+                color: #251F67;
+            }
+        }
+    }
+
+    .about-tafakkur-training-wrapper {
+        background-color: #F6F5FD;
+
+        .about-tafakuur-content {
+            .about-tafakuur-logo {
+                display: inline-block;
+                border-bottom: 2px solid var(--themeBlueDark);
+            }
+
+            .about-tafakuur-title {}
+
+            .about-tafakuur-desc {
+                color: #94a3b8;
+            }
+        }
+    }
+}
+.about-tafakuur-content {
+    .about-tafakuur-logo {
+        .logo {
+            width: 132px;
+        }
+    }
+}
+.image-full {
+    background: #F6F5FD;
+
+    .about-tafakkur-training-bg {
+        position: relative;
+        height: 480px;
+
+        @media (max-width: 992px) {
+            height: auto;
+        }
+    }
+
+    .slider-side {
+        position: absolute;
+        height: 480px;
+        top: 0;
+        left: 0;
+
+        @media (max-width: 992px) {
+            position: static;
+        }
+
+        .swiper {
+            height: 100%;
+        }
+    }
+
+    &.success-stories-wrapper {
+
+        .about-tafakkur-training-bg,
+        .slider-side {
+            height: 313px;
+            left: auto;
+            background: #F6F5FD;
+
+            @media (max-width: 992px) {
+                height: auto;
+            }
+        }
+    }
+}

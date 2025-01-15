@@ -1,0 +1,300 @@
+.programs-wrapper {
+    h2 {
+        position: relative;
+        color: var(--themeBlueDark);
+        display: inline-block;
+        margin: 0 auto !important;
+        padding-bottom: 15px;
+
+        &::after {
+            content: "";
+            width: 90%;
+            height: 1px;
+            background-color: var(--themeBlueDark);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .program-content {
+        h3 {
+            font-size: pxtorem(37);
+            margin-bottom: 8px;
+            color: var(--themeBlueDark);
+        }
+
+        h4 {
+            font-size: pxtorem(25);
+            margin-bottom: 15px;
+        }
+
+        a {
+            font-size: pxtorem(17);
+            color: var(--themePurple);
+            font-weight: bold;
+        }
+    }
+
+    .program-wrapper {
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .program-cover {
+                position: relative;
+
+                >img {
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+                .overlay {
+                    position: absolute;
+                    inset: 0;
+                    background-color: #00000078;
+                    opacity: 0;
+                    transition: all 0.4s ease-in-out;
+                }
+
+                .auther {
+                    position: absolute;
+                    bottom: -20px;
+                    right: 20px;
+                    opacity: 0;
+                    z-index: 1;
+                    transition: all 0.4s ease-in-out;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        object-fit: cover;
+                        border-radius: 100px;
+                    }
+
+                    span {
+                        font-size: 17px;
+                        color: #ffffff;
+                        font-weight: 400;
+                        margin-right: 10px;
+                        font-family: "GE Flow";
+                    }
+                }
+
+            }
+
+            &:hover {
+
+                .overlay {
+                    opacity: 1;
+                }
+
+                .auther {
+                    opacity: 1;
+                    bottom: 20px;
+                }
+            }
+
+            .card-body {
+                position: relative;
+                z-index: 2;
+                background-color: $white;
+                border: 1px solid #ebebeb;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+
+                .card-category {
+                    font-size: pxtorem(19);
+                    color: var(--themeBlueDark);
+                }
+
+                .card-title {
+                    font-size: pxtorem(25);
+                }
+
+                p {
+                    font-size: pxtorem(17);
+                    color: #94a3b8;
+                }
+
+                hr {
+                    border-color: #bbbbbb;
+                }
+
+                .program-details {
+                    img {
+                        width: 15px;
+                    }
+
+                    p {
+                        font-size: pxtorem(16);
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.images-slider {
+    .swiper-slide {
+        height: auto;
+
+        img {
+            object-fit: cover;
+        }
+    }
+}
+
+.testimonial-wrapper {
+    padding-top: 0;
+    background-color: #2d45a0;
+
+    .testimonial-bg {
+        position: relative;
+        padding-top: 80px;
+        background-image: url("https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/categories/bg.jpg");
+        background-size: cover;
+        background-position: 50% 75%;
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background-color: #251f67b0;
+        }
+    }
+
+    .testimonial-content {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+
+        .testimonial-message {
+            margin-bottom: 30px;
+        }
+
+        .testimonial-message,
+        .testimonial-person-name {
+            font-size: pxtorem(20);
+            color: #f6f5fd;
+
+            p {
+                color: #fff;
+            }
+        }
+
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #f6f5fd;
+    }
+
+    hr {
+        background: #fff;
+        opacity: 1;
+    }
+
+    .total-students-wrapper {
+        h3 {
+            color: #f6f5fd;
+            font-size: pxtorem(55);
+            font-family: 'Myriad Pro';
+        }
+
+        h4 {
+            color: #f6f5fd;
+            // font-size: 35px;
+        }
+
+        p {
+            color: #f6f5fd;
+            font-size: pxtorem(20);
+        }
+    }
+
+}
+
+.swiper-pagination {
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        border-radius: 2px;
+        background: #fff;
+        opacity: 1;
+
+        &.swiper-pagination-bullet-active {
+            background-color: var(--themePurple);
+        }
+    }
+}
+
+.training-new-wrapper {
+    h2 {
+        color: var(--themeBlueDark);
+        margin-bottom: 30px;
+    }
+
+    .card {
+        border: none;
+
+        .card-img-top {
+            border-radius: 0;
+            height: 228px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1.5rem 0;
+
+            h5 {
+                font-size: pxtorem(25);
+            }
+
+            h6 {
+                font-size: pxtorem(16);
+                color: #afaebb;
+                margin-bottom: 8px;
+            }
+
+            p,li {
+                font-family: "GE Flow";
+                font-size: pxtorem(19);
+                color: #afaebb;
+                margin-bottom: 8px;
+            }
+
+            a {
+                font-size: pxtorem(19);
+                color: #83266c;
+            }
+        }
+    }
+
+    .view-more-news {}
+}
+
+.book-seat-section {
+    padding-bottom: 130px;
+    background-color: #f6f5fd;
+
+    .content {
+        text-align: center;
+
+        @media (min-width: 768px) {
+            text-align: right;
+        }
+
+        h2 {
+            color: var(--themeBlueDark);
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: #94a3b8;
+            font-size: pxtorem(20);
+        }
+    }
+}

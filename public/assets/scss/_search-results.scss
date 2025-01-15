@@ -1,0 +1,77 @@
+.search-results {
+
+    form {
+        position: relative;
+
+        input {
+            width: 100%;
+            color: var(--themeBlueDark);
+            padding: 8px 15px;
+            padding-left: 50px;
+            border-radius: 5px;
+            font-family: "GE Flow";
+            font-size: 1.25rem;
+            border: 1px solid #d8d7df;
+        }
+
+        .search-button {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 100%;
+            text-align: center;
+            line-height: 50px;
+
+            i {
+                color: #fff;
+                border-radius: 100%;
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+                background-color: var(--themeBlueDark);
+            }
+        }
+    }
+
+    .search-tabs {
+        margin-top: 35px;
+
+        .search-tab {
+            cursor: pointer;
+            padding: 5px 15px;
+            border-radius: 5px;
+            background-color: #f6f5fd;
+            font-family: "GE Flow";
+            font-weight: 400;
+            color: #94a3b8;
+            font-size: pxtorem(18);
+
+            &.active {
+                color: #fff;
+                background-color: var(--themePurple);
+            }
+        }
+    }
+
+    .no-results {
+        color: #94a3b8;
+    }
+
+    .contact-wrapper {
+        &.big-space{
+            margin-top: 300px;
+        }
+    }
+
+    .news-date {
+        min-width: 100px;
+        text-align: center;
+    }
+    // .search-img-wrapper {
+    //     height: 174px;
+    // }
+}

@@ -1,0 +1,220 @@
+[dir="rtl"] {
+  .section-title span {
+    font-family: "GE SS Two Medium";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'GE Flow';
+    font-weight: 400;
+  }
+
+  p {
+    font-family: 'GE Flow';
+    font-weight: 400;
+    font-style: normal;
+    ;
+  }
+
+  button,
+  a {
+    font-family: "GE Flow";
+  }
+
+  // .theme-btn,
+  // .theme-btn-2 {
+  //   display: inline-flex;
+  //   align-items: center;
+  //   flex-direction: row-reverse;
+  //   justify-content: start;
+  //   font-family: "GE SS Two Bold";
+  // }
+
+  // .announcements-link {
+  //   // display: block;
+  //   line-height: 70px;
+  // }
+
+  // .hero-1 .hero-content h2 {
+  //   padding-right: 0;
+  //   padding-left: 1rem;
+  // }
+
+  // .hero-1 .hero-content .hero-content-bg {
+  //   left: auto;
+  //   right: 0;
+  //   -webkit-transform: scaleX(-1);
+  //   transform: scaleX(-1);
+  // }
+
+  // .hero-1 .hero-content .hero-button .video-btn::before,
+  // .hero-1 .hero-content .hero-button .video-btn::after {
+  //   transform: translate(9%, -50%);
+  // }
+
+  // .hero-1 .hero-content .hero-button .button-text span {
+  //   font-family: "GE SS Two Medium";
+  // }
+
+  // .contact-form-items .form-clt {
+  //   span {
+  //     font-family: "GE SS Two Medium";
+  //   }
+
+  //   input,
+  //   textarea {
+  //     font-family: "GE SS Two Light";
+  //   }
+  // }
+
+  // .breadcrumb-wrapper .page-heading .breadcrumb-items li {
+  //   font-family: "GE SS Two Light";
+  // }
+
+  .header-top-wrapper .top-right .social-icon span,
+  .header-main .main-menu ul li a {
+    font-family: 'GE Flow';
+    font-weight: 400;
+    font-style: normal;
+
+  }
+
+  // .header-top-wrapper .contact-list li i {
+  //   margin-right: 0;
+  //   margin-left: 10px;
+  // }
+
+  // .about-wrapper {
+  //   .about-content {
+  //     padding-right: 1.5rem;
+  //     padding-left: 0;
+  //   }
+  // }
+
+  // .mean-container .mean-nav>ul>li {
+  //   &.active {
+  //     >a {
+  //       color: var(--theme);
+  //     }
+  //   }
+
+  //   >a {
+  //     font-family: "GE SS Two Light";
+  //     font-weight: 600;
+  //   }
+  // }
+
+  // .project-details-wrapper .preview-area .preview-item .content a {
+  //   display: flex;
+  //   align-items: center;
+  //   flex-direction: row-reverse;
+  //   font-family: "GE SS Two Bold";
+  // }
+
+  // .header-top-section::before {
+  //   right: 81%;
+  //   left: 0;
+  // }
+
+  // .header-1::before {
+  //   right: auto;
+  //   left: 0;
+  // }
+
+  // .breadcrumb-wrapper .line-shape {
+  //   right: auto;
+  //   left: 0;
+  //   -webkit-transform: scaleX(-1);
+  //   transform: scaleX(-1);
+  // }
+
+  // .array-button {
+  //   flex-direction: row-reverse;
+  // }
+
+  // .project-items .project-image .project-content {
+  //   &::before {
+  //     left: auto;
+  //     right: 0;
+  //   }
+
+  //   .icon {
+  //     right: auto;
+  //     left: 30px;
+  //     -webkit-transform: scaleX(-1);
+  //     transform: scaleX(-1);
+  //   }
+  // }
+
+  // .service-wrapper .service-box-items .content>a {
+  //   justify-content: center;
+
+  //   i {
+  //     -webkit-transform: scaleX(-1);
+  //     transform: scaleX(-1);
+  //   }
+  // }
+
+  // .achievement-wrapper.style-2 .counter-area .counter-items:not(:last-child) {
+  //   border-left: 2px solid rgba(243, 247, 251, 0.16);
+  //   border-right: none;
+  //   padding-left: 70px;
+  //   padding-right: 0;
+
+  //   @media (max-width: 1199px) {
+  //     padding-left: 0;
+  //     border: none;
+
+  //   }
+  // }
+
+  // .project-section#projects::after {
+  //   left: auto;
+  //   right: 0;
+  //   -webkit-transform: scaleX(-1);
+  //   transform: scaleX(-1);
+  // }
+
+  // .breadcrumb-wrapper .page-heading .breadcrumb-items li i {
+  //   transform: rotate(180deg);
+  // }
+
+  .footer-widgets-wrapper .single-footer-widget .list-area li:not(.en-txt) {
+    font-family: 'GE Flow';
+    font-weight: 400;
+    font-style: normal;
+    ;
+  }
+
+  .footer-widgets-wrapper .single-footer-widget .list-area li>i,
+  .footer-widgets-wrapper .single-footer-widget .list-area li a i {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+
+  .footer-widgets-wrapper .single-footer-widget .list-area li:not(.en-txt) a i {
+    transform: rotate(180deg);
+  }
+
+  .footer-widgets-wrapper .single-footer-widget .list-area li:hover {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  .footer-bottom .footer-wrapper p a:not(.footer-bottom .footer-wrapper p a:last-of-type) {
+    margin-right: 0;
+    margin-left: 1.5rem;
+  }
+
+  // @media (min-width: 1900px) {
+  //   .header-main .main-menu ul {
+  //     margin-right: 0;
+  //     margin-left: 50px;
+  //   }
+  // }
+
+}

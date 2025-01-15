@@ -1,15 +1,13 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { getUrlParams } from '@/helpers';
 import Image from 'next/image';
 
 export default function Shipping({versionsTitles}) {
-    const [urlParams, setUrlParams] = useState(null);
+    const [localStorage, setLocalStorage] = useState({});
 
     useEffect(() => {
-        
-        const storedParams = getUrlParams();
-        setUrlParams(storedParams || "");
+        setLocalStorage(window.localStorage);
+        console.log(window.localStorage);
     }, []);
 
     return (
@@ -21,7 +19,7 @@ export default function Shipping({versionsTitles}) {
                     <div className="action-buttons mt-4 pt-3">
                         {
                                 <>
-                                <a target="_blank" className="hover-outlined-btn me-3" href={`https://forms.zohopublic.com/tafakkur/form/Resubscribeform/formperma/MZ0EONE48kPw3FvUZtxw2DitTAXK-SGeUWG3P_x18SI?utm_source=${localStorage?.getItem("utm_source") || ''}`}>أعلمني بكل جديد</a>
+                                <a target="_blank" className="hover-outlined-btn me-3" href={`https://forms.zohopublic.com/tafakkur/form/Resubscribeform/formperma/MZ0EONE48kPw3FvUZtxw2DitTAXK-SGeUWG3P_x18SI?utm_source=${localStorage?.utm_source}`}>أعلمني بكل جديد</a>
                                 <a target="_blank" className="hover-btn " href='https://wa.me/962790727220'>
                                     <i className="fa-brands fa-whatsapp me-3"></i>
                                     اطلب الأن

@@ -22,7 +22,13 @@ export default function ReviewDetails() {
     // const productid = localStorage.getItem("product-id")
     // const categoryid = localStorage.getItem("category-id")
     // const categorySlug = localStorage.getItem("category-slug")
+    const [localStorage, setLocalStorage] = useState({});
 
+    useEffect(() => {
+        setLocalStorage(window.localStorage);
+        console.log(window.localStorage);
+    }, []);
+    
     const myHeaders = new Headers();
     myHeaders.append("Accept", "application/json");
     myHeaders.append("Accept-Language", state.LANG); // Assuming state.LANG is defined
@@ -60,7 +66,7 @@ export default function ReviewDetails() {
                 parentrumbRoute={`tafakkur-publishers/categories/${categoryid}`}
                 breadcrumbTitle={bookDetails?.name}
                 versionsBtn="احصل على الإصدارات الآن"
-                btnRoute={`https://forms.zohopublic.com/tafakkur/form/Untitled5/formperma/xbumF0HBgyi7ZpN5ZWjsHpn9jR5OODt5RsJ3RoTY5IA?utm_source=${localStorage?.getItem("utm_source") || ''}`}
+                btnRoute={`https://forms.zohopublic.com/tafakkur/form/Untitled5/formperma/xbumF0HBgyi7ZpN5ZWjsHpn9jR5OODt5RsJ3RoTY5IA?utm_source=${localStorage?.utm_source}`}
                 bannerBg={bookDetails?.cover_image || "https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/versions/detailsCover.jpg"}
                 loader={loading}
             >

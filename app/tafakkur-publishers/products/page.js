@@ -18,7 +18,13 @@ export default function VersionsListing() {
     const [booksData, setBooksData] = useState([]);
     const [agesData, setAgessData] = useState([]);
     const [versionsData, setVersionsData] = useState([]);
+    const [localStorage, setLocalStorage] = useState({});
 
+    useEffect(() => {
+        setLocalStorage(window.localStorage);
+        console.log(window.localStorage);
+    }, []);
+    
     const myHeaders = new Headers();
     myHeaders.append("Accept", "application/json");
     myHeaders.append("Accept-Language", state.LANG); // Assuming state.LANG is defined
@@ -102,7 +108,7 @@ export default function VersionsListing() {
                 bannerBg="https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/versions/bg.jpg"
                 versionsBtn="احصل على الإصدارات الآن"
                 allVersionsDesc="اختر من مجموعة الإصدارات الواسعة التي تلبي احتياجات أبنائك! "
-                btnRoute={`https://forms.zohopublic.com/tafakkur/form/Untitled5/formperma/xbumF0HBgyi7ZpN5ZWjsHpn9jR5OODt5RsJ3RoTY5IA?utm_source=${localStorage?.getItem("utm_source") || ''}`}
+                btnRoute={`https://forms.zohopublic.com/tafakkur/form/Untitled5/formperma/xbumF0HBgyi7ZpN5ZWjsHpn9jR5OODt5RsJ3RoTY5IA?utm_source=${localStorage?.utm_source}`}
                 loader={loading}
             >
                 <section className="version-details section-padding pb-0">

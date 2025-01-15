@@ -4,13 +4,13 @@ import { useState, useEffect } from 'react';
 import Image from "next/image";
 
 export default function AboutAcademy({data}) {
-    const [urlParams, setUrlParams] = useState("");
-    
+    const [localStorage, setLocalStorage] = useState({});
+
     useEffect(() => {
-        
-        const storedParams = getUrlParams();
-        setUrlParams(storedParams || "");
+        setLocalStorage(window.localStorage);
+        console.log(window.localStorage);
     }, []);
+    
     return (
         <div className="about-publishers academy">
             <div className="container custom-container">
@@ -67,7 +67,7 @@ export default function AboutAcademy({data}) {
                                         <p>
                                             الطلاب المسجلين في دوراتنا السابقة
                                         </p>
-                                        <a href={`https://zfrmz.com/o9ZSobK0CpnlzJ1K2yTR?utm_source=${localStorage?.getItem("utm_source") || ''}`} className="book-seat-btn d-block mt-2">
+                                        <a href={`https://zfrmz.com/o9ZSobK0CpnlzJ1K2yTR?utm_source=${localStorage?.utm_source}`} className="book-seat-btn d-block mt-2">
                                             احجز مقعداً لابنك الآن
                                             <i className="fa-solid fa-caret-left ms-2"></i>
                                         </a>

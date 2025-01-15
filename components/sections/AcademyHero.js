@@ -12,12 +12,11 @@ export default function AcademyHero({data}) {
     const { state } = useAppContext();
     const translation = state.LANG === "en" ? en : ar;
     const [infoData, setInfoData] = useState(null);
-    const [urlParams, setUrlParams] = useState("");
-    
+    const [localStorage, setLocalStorage] = useState({});
+
     useEffect(() => {
-        
-        const storedParams = getUrlParams();
-        setUrlParams(storedParams || "");
+        setLocalStorage(window.localStorage);
+        console.log(window.localStorage);
     }, []);
 
     // Replace with your phone number (including country code, but without + or 00)
@@ -47,7 +46,7 @@ export default function AcademyHero({data}) {
                                         كل مستوى مدته <span className="en-txt">8</span> شهور (حصتين أسبوعياً)
                                     </p>
                                 </div>
-                                <a href={`https://zfrmz.com/o9ZSobK0CpnlzJ1K2yTR?utm_source=${localStorage?.getItem("utm_source") || ''}`} target="_blank" rel="noopener noreferrer" className="wow fadeInUp hero-button orange-btn" data-wow-delay=".4s">
+                                <a href={`https://zfrmz.com/o9ZSobK0CpnlzJ1K2yTR?utm_source=${localStorage?.utm_source}`} target="_blank" rel="noopener noreferrer" className="wow fadeInUp hero-button orange-btn" data-wow-delay=".4s">
                                     احجز مقعد ابنك في دورة يناير <span className="en-txt">2025</span>
                                 </a>
                             </div>

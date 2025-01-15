@@ -22,6 +22,13 @@ export default function Version() {
     const [agesData, setAgesData] = useState([]);
     // const categoryid = localStorage.getItem("category-id");
     // const categorySlug = localStorage.getItem("category-slug");
+    const [localStorage, setLocalStorage] = useState({});
+
+    useEffect(() => {
+        setLocalStorage(window.localStorage);
+        console.log(window.localStorage);
+    }, []);
+
     const myHeaders = new Headers();
     myHeaders.append("Accept", "application/json");
     myHeaders.append("Accept-Language", state.LANG); // Assuming state.LANG is defined
@@ -98,7 +105,7 @@ export default function Version() {
                 bannerBg={versionDetails?.category?.image}
                 versionsBtn="احصل على الإصدارات الآن"
                 allVersionsDesc={versionDetails?.category?.hint || ""}
-                btnRoute={`https://forms.zohopublic.com/tafakkur/form/Untitled5/formperma/xbumF0HBgyi7ZpN5ZWjsHpn9jR5OODt5RsJ3RoTY5IA$?utm_source=${localStorage?.getItem("utm_source") || ''}`}
+                btnRoute={`https://forms.zohopublic.com/tafakkur/form/Untitled5/formperma/xbumF0HBgyi7ZpN5ZWjsHpn9jR5OODt5RsJ3RoTY5IA$?utm_source=${localStorage?.utm_source}`}
                 loader={loading}
             >
                 <section className="version-details section-padding pb-0">

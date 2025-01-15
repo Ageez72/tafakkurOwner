@@ -1,8 +1,16 @@
 import Image from 'next/image';
 import VideoPopup from "../elements/VideoPopup";
 import { getYouTubeVideoID } from "@/helpers";
+import { useEffect, useState } from 'react';
 
 export default function AnosLevelsEffects({ data }) {
+    const [localStorage, setLocalStorage] = useState({});
+
+    useEffect(() => {
+        setLocalStorage(window.localStorage);
+        console.log(window.localStorage);
+    }, []);
+
     return (
         <section className="anos-levels-effects">
             <div className="bg-color">
@@ -96,7 +104,7 @@ export default function AnosLevelsEffects({ data }) {
                                 </div>
                                 <div className="col-12 col-md-6">
                                     <div className="action-buttons d-flex align-items-center justify-content-center flex-wrap">
-                                        <a className="hover-outlined-btn d-inline-block py-1 me-3 mt-3"  href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.getItem("utm_source") || ''}`}>
+                                        <a className="hover-outlined-btn d-inline-block py-1 me-3 mt-3"  href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.utm_source}`}>
                                             <i className="fa-solid fa-download me-2"></i>
                                             حمل البروشور التعريفي
                                         </a>

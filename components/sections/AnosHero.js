@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Autoplay, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 const swiperOptions = {
   modules: [Autoplay, EffectFade],
@@ -21,6 +22,13 @@ const swiperOptions = {
 };
 
 export default function AnosHero() {
+  const [localStorage, setLocalStorage] = useState({});
+
+  useEffect(() => {
+      setLocalStorage(window.localStorage);
+      console.log(window.localStorage);
+  }, []);
+
   const handleSlideChange = (swiper) => {
     setTimeout(() => {
       // Add animation to active slide's .txt-side elements
@@ -68,7 +76,7 @@ export default function AnosHero() {
                         </h2>
 
                         <Link
-                          href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.getItem("utm_source") || ''}`}
+                          href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.utm_source}`}
                           className="hover-btn d-inline-flex align-items-center"
                         >
                           طبق في مؤسستك
@@ -138,7 +146,7 @@ export default function AnosHero() {
                           تنمية مهارات التفكير الإبداعي والناقد والكشف عن الموهوبين
                         </h2>
                         <Link
-                          href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.getItem("utm_source") || ''}`}
+                          href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.utm_source}`}
                           className="hover-btn d-inline-flex align-items-center"
                         >
                           طبق في مؤسستك
@@ -208,7 +216,7 @@ export default function AnosHero() {
                           تنمية ذكاءات الطلاب المتعددة والكشف عن الذكاءات 
                         </h2>
                         <Link
-                          href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.getItem("utm_source") || ''}`}
+                          href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.utm_source}`}
                           className="hover-btn d-inline-flex align-items-center"
                         >
                           طبق في مؤسستك
@@ -278,7 +286,7 @@ export default function AnosHero() {
                           بيئة مدرسية إيجابية يحبها الطلاب ويرغب بها الأهل
                         </h2>
                         <Link
-                          href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.getItem("utm_source") || ''}`}
+                          href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.utm_source}`}
                           className="hover-btn d-inline-flex align-items-center"
                         >
                           طبق في مؤسستك
@@ -348,7 +356,7 @@ export default function AnosHero() {
 تطور في أداء المعلم وفق أحدث استراتيجيات التعلم المتناغم مع الدماغ 
                         </h2>
                         <Link
-                          href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.getItem("utm_source") || ''}`}
+                          href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.utm_source}`}
                           className="hover-btn d-inline-flex align-items-center">
                           طبق في مؤسستك
                         </Link>
@@ -417,7 +425,7 @@ export default function AnosHero() {
                           تعزيز الرسالة لدى الكوادر التعليمية                     
                        </h2>
                         <Link
-                          href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.getItem("utm_source") || ''}`}
+                          href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.utm_source}`}
                           className="hover-btn d-inline-flex align-items-center"
                         >
                           طبق في مؤسستك

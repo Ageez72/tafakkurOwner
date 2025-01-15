@@ -1,7 +1,16 @@
+"use client";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import AnosExperienceSlider from "../slider/AnosExperienceSlider";
 
 export default function AnosContactExperience() {
+    const [localStorage, setLocalStorage] = useState({});
+
+    useEffect(() => {
+        setLocalStorage(window.localStorage);
+        console.log(window.localStorage);
+    }, []);
+    
     return (
         <section className="anos-contact-experience">
             <div className="anos-contact py-5">
@@ -34,7 +43,7 @@ export default function AnosContactExperience() {
                                 يقدم القسم التأهيل والدعم المستمر للمؤسسات المطبقة من خلال الزيارات الميدانية واللقاءات التفاعلية عن بعد والبريد الإلكتروني ومجموعات المحادثة، ليطور أداء المشرفين والمعلمين في تطبيق منهاج تفكر، والكشف عن الموهوبين المبدعين والكشف عن أنواع الذكاء المرتفع لدى الطلاب، وتحقيق الأهداف الوجدانية ، وتقييم النتاجات الروحية والنفسية والأخلاقية، وتهيئة البيئة الإيجابية وازالة التوتر.
                             </p>
                             <p>
-                                <a className="d-inline-flex align-items-center" href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.getItem("utm_source") || ''}`}>
+                                <a className="d-inline-flex align-items-center" href={`https://forms.zohopublic.com/tafakkur/form/Untitled19/formperma/ZwPaVDv5Ld5kLqH7iN28BBABGeQ4CqON5AF5LrFYrY4?utm_source=${localStorage?.utm_source}`}>
                                     <i className="fa-solid fa-download me-2"></i>
                                     حمل البروشور التعريفي
                                 </a>

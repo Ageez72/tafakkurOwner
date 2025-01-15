@@ -5,12 +5,11 @@ const imageArr = ["https://d329sg0poh8k4h.cloudfront.net/tafakkur-website/publis
 import { getUrlParams } from '@/helpers';
 
 export default function UpcomingEvents({ data }) {
-    const [urlParams, setUrlParams] = useState("");
+    const [localStorage, setLocalStorage] = useState({});
 
     useEffect(() => {
-        
-        const storedParams = getUrlParams();
-        setUrlParams(storedParams || "");
+        setLocalStorage(window.localStorage);
+        console.log(window.localStorage);
     }, []);
 
     return (
@@ -22,7 +21,7 @@ export default function UpcomingEvents({ data }) {
                             <i className="fa-regular fa-calendar calendar"></i>
                             <h2 className="head-blue mt-4 mb-4">معارض كتاب قادمة يشارك بها تفكر ناشرون</h2>
                             <div dangerouslySetInnerHTML={{ __html: data }} />
-                            <a href={`https://forms.zohopublic.com/tafakkur/form/Resubscribeform/formperma/MZ0EONE48kPw3FvUZtxw2DitTAXK-SGeUWG3P_x18SI?utm_source=${localStorage?.getItem("utm_source") || ''}`} className="mt-4 d-block inform-btn">أعلمني عند توفر الإصدارات في  معارض الكتاب <i className="fa-solid fa-arrow-left ms-2"></i></a>
+                            <a href={`https://forms.zohopublic.com/tafakkur/form/Resubscribeform/formperma/MZ0EONE48kPw3FvUZtxw2DitTAXK-SGeUWG3P_x18SI?utm_source=${localStorage?.utm_source}`} className="mt-4 d-block inform-btn">أعلمني عند توفر الإصدارات في  معارض الكتاب <i className="fa-solid fa-arrow-left ms-2"></i></a>
                         </div>
                         <div className="col-12 col-md-6 slider-side p-0">
                             <div className="col-12 col-md-6 position-relative w-100 h-100">

@@ -104,7 +104,7 @@ export default function Version() {
                 bannerBg={versionDetails?.category?.image}
                 versionsBtn="احصل على الإصدارات الآن"
                 allVersionsDesc={versionDetails?.category?.hint || ""}
-                btnRoute={`https://forms.zohopublic.com/tafakkur/form/Untitled5/formperma/xbumF0HBgyi7ZpN5ZWjsHpn9jR5OODt5RsJ3RoTY5IA$?utm_source=${localStorage?.utm_source}`}
+                btnRoute={`https://forms.zohopublic.com/tafakkur/form/Untitled5/formperma/xbumF0HBgyi7ZpN5ZWjsHpn9jR5OODt5RsJ3RoTY5IA?utm_source=${localStorage?.utm_source}`}
                 loader={loading}
             >
                 <section className="version-details section-padding pb-0">

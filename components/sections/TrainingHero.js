@@ -30,7 +30,7 @@ export default function TrainingHero({ link, cover }) {
                   <br />
                   التي تجمع بين أصالة الإسلام وحداثة علم الدماغ والأعصاب
                 </h2>
-                <a href={`${link}`} target="_blank" className="wow fadeInUp hero-button" data-wow-delay=".4s">
+                <a href={`${link}?utm_source=${localStorage?.utm_source}`} target="_blank" className="wow fadeInUp hero-button" data-wow-delay=".4s">
                   احجز مقعدك في أقرب برنامج تدريبي
                 </a>
               </div>
